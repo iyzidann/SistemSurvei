@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EBEBEB;
+    font-family: 'Poppins';
+}
+
+/* Background */
+.bg-hero {
+    position: relative;
+    height: 50vh;
+    background-image: url('../img/polinema1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.bg-hero .container {
+    z-index: 3;
+}
+
+.bg-primary-1 {
+    background-color: #1B3767;
+    position: relative;
+}
+
+.bg-primary-2 {
+    background-color: #CCD9EF;
+}
+
+.bg-icon {
+    background-color: white;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.bg-icon i {
+    font-size: 24px;
+}
+
+/* Text */
+.font-poppins {
+    font-family: 'Poppins';
+}
+
+.font-lato {
+    font-family: 'Lato';
+}
+
+.text-heading-md {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.text-heading-lg {
+    font-weight: 500;
+    font-size: large;
+}
+
+.text-heading-xl {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.text-heading-2xl {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.text-body-md {
+    font-weight: 400;
+    font-size: medium;
+}
+
+.text-primary-1 {
+    color: #CCD9EF;
+}
+
+/* Button */
+.btn {
+    padding: 12px 24px;
+    border-radius: 36px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.btn.btn-primary {
+    background-color: #7797CD;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: #6e8cc0;
+}
+
+/* Rating Input */
+.rating {
+    display: flex;
+    column-gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.rating label:hover {
+    background-color: whitesmoke;
+}
+
+.rating input:checked+label {
+    background-color: #1B3767;
+}
